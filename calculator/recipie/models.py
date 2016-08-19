@@ -10,6 +10,10 @@ class Recipe(models.Model):
 
 class Ingredient(models.Model):
     name = models.TextField(null=False)
+    protein = models.IntegerField()
+    fibre = models.IntegerField()
+    carbs = models.IntegerField()
+    fat = models.IntegerField()
 
 
 class NutritionalFactor(models.Model):
